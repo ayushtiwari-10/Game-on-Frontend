@@ -1,0 +1,198 @@
+.applications-page {
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+  }
+  
+  .applications-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .applications-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f5f5f5;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+  }
+  
+  .tab {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #666;
+    position: relative;
+  }
+  
+  .tab.active {
+    color: var(--primary-color);
+  }
+  
+  .tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--primary-color);
+  }
+  
+  .application-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .player-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .player-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .player-details h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .player-details p {
+    margin: 0.25rem 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .applied-date {
+    font-size: 0.8rem !important;
+    color: #999 !important;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .accept-btn,
+  .reject-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .accept-btn {
+    background: #4caf50;
+    color: white;
+  }
+  
+  .reject-btn {
+    background: #f44336;
+    color: white;
+  }
+  
+  .status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .status.accepted {
+    background: #e8f5e9;
+    color: #4caf50;
+  }
+  
+  .status.rejected {
+    background: #ffebee;
+    color: #f44336;
+  }
+  
+  @media (max-width: 768px) {
+    .applications-page {
+      padding: 1rem;
+    }
+  
+    .application-card {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+  
+    .player-info {
+      flex-direction: column;
+    }
+  
+    .action-buttons {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .player-avatar {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .player-details h3 {
+      font-size: 1rem;
+    }
+  
+    .player-details p {
+      font-size: 0.8rem;
+    }
+  
+    .applied-date {
+      font-size: 0.7rem !important;
+    }
+  
+    .action-buttons {
+      gap: 0.25rem;
+    }
+  
+    .accept-btn,
+    .reject-btn {
+      padding: 0.25rem 0.5rem;
+      font-weight: 400;
+    }
+  }  

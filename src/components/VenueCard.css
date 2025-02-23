@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+.venue-card {
+  background: #2a2a2a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: white;
+  width: 380px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.venue-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Logo */
+.venue-logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+/* Title */
+.venue-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Image */
+.venue-image {
+  width: 100%;
+  height: 180px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.venue-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Description */
+.venue-description {
+  font-size: 0.9rem;
+  color: #ccc;
+  padding: 0.5rem;
+  background: #3a3a3a;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Location */
+.venue-location {
+  background: #3a3a3a;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Options Button */
+.venue-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.venue-option {
+  background: #3a3a3a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.venue-option:hover {
+  background: #4a4a4a;
+}
+
+/* Footer */
+.venue-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* Join Button */
+.join-btn {
+  background: white;
+  color: #2a2a2a;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.join-btn:hover {
+  background: #f0f0f0;
+}
+
+/* Star Rating */
+.rating {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.star {
+  transition: transform 0.2s;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links i {
+  font-size: 1.2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.social-links i:hover {
+  color: white;
+}

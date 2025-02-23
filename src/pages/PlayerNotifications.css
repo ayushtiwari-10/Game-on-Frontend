@@ -1,0 +1,130 @@
+.notifications-page {
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+  }
+  
+  .notifications-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notifications-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .notifications-header h1 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+  }
+  
+  .tab {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #666;
+    position: relative;
+  }
+  
+  .tab.active {
+    color: var(--primary-color);
+  }
+  
+  .tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--primary-color);
+  }
+  
+  .notification-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .notification-card.read {
+    background: white;
+    opacity: 0.7;
+  }
+  
+  .notification-content {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+  }
+  
+  .notification-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .notification-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .notification-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .time {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .mark-read-btn {
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .notifications-page {
+      padding: 1rem;
+    }
+  
+    .notification-card {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .notification-actions {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  
+  

@@ -1,0 +1,371 @@
+.profile-page {
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+  }
+  
+  .profile-header {
+    background: white;
+    border-radius: 0 0 1rem 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-cover {
+    height: 200px;
+    background: #f8b84e;
+    position: relative;
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    padding: 2rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    margin-top: -75px;
+  }
+  
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-details {
+    flex: 1;
+  }
+  
+  .name-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .name-section h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .badge-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  
+  .contact-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .bio {
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
+  .edit-profile-btn {
+    padding: 0.75rem 1.5rem;
+    background: #f8b84e;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .profile-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+  }
+  
+  .profile-sidebar {
+    background: #1a237e;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    height: fit-content;
+  }
+  
+  .sidebar-section {
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .public-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .connection-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .connection-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .connection-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .connection-info {
+    flex: 1;
+  }
+  
+  .connection-info p {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .connection-info span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  .connect-btn {
+    padding: 0.5rem 1rem;
+    background: #f8b84e;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  
+  .profile-section {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+  .section-header {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .section-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .action-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .chevron {
+    transition: transform 0.3s ease;
+  }
+  
+  .chevron.rotated {
+    transform: rotate(180deg);
+  }
+  
+  .section-content {
+    padding: 1.5rem;
+  }
+  
+  .experience-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .org-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 0.5rem;
+  }
+  
+  .qualification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .qualification-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .qualification-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .skill-rating {
+    display: flex;
+    gap: 0.25rem;
+  }
+  
+  .skill-rating .filled {
+    color: #f8b84e;
+    fill: #f8b84e;
+  }
+  
+  .activity-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .activity-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tab-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #666;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .tab-btn.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+  }
+  
+  .activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .activity-card {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .activity-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .profile-info {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .profile-avatar {
+      margin: -75px auto 0;
+    }
+  
+    .name-section {
+      justify-content: center;
+    }
+  
+    .contact-info {
+      justify-content: center;
+    }
+  }
+  
+  /* @media (max-width: 480px) {
+    .profile-info {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .profile-avatar {
+      width: 100px;
+      height: 100px;
+      margin-top: -50px;
+    }
+  
+    .profile-info {
+      padding: 1rem;
+    }
+  
+    .profile-content {
+      padding: 0 1rem;
+    }
+  
+    .profile-sidebar {
+      padding: 1rem;
+    }
+  
+    .section-header {
+      padding: 1rem;
+    }
+  
+    .section-content {
+      padding: 1rem;
+    }
+  }   */

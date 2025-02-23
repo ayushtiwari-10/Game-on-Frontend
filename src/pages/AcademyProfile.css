@@ -1,0 +1,421 @@
+.academy-profile {
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+  }
+  
+  .profile-header {
+    background: white;
+    margin-bottom: 2rem;
+  }
+  
+  .cover-image {
+    height: 200px;
+    background: #f8b84e;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .profile-main {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  .profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: -75px;
+  }
+  
+  .profile-details h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .verify-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: 1px solid #f8b84e;
+    color: #f8b84e;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .academy-description {
+    max-width: 800px;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #666;
+  }
+  
+  .contact-btn {
+    color: #1a237e;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .edit-profile-btn {
+    padding: 0.75rem 1.5rem;
+    background: #f8b84e;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .profile-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+  }
+  
+  .profile-sidebar {
+    background: #1a237e;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    height: fit-content;
+  }
+  
+  .sidebar-section {
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-section h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .public-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .connection-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .connection-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .connection-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .connection-info {
+    flex: 1;
+  }
+  
+  .connection-info p {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .connection-info span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  .connect-btn {
+    padding: 0.5rem 1rem;
+    background: #f8b84e;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  
+  .show-all-btn {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .action-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .action-btn.primary {
+    background: #1a237e;
+    color: white;
+    border: none;
+  }
+  
+  .action-btn.outline {
+    background: none;
+    border: 1px solid #1a237e;
+    color: #1a237e;
+  }
+  
+  .summary-section,
+  .experience-section,
+  .certifications-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .edit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .services-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .services-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .services-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4caf50;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-card {
+    background: #1a237e;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+  
+  .stat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .circular-progress,
+  .score-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .progress-value,
+  .score-value {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .referral-stats,
+  .users-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .stats-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .activity-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .activity-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .tab-btn {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .tab-btn.active {
+    color: #1a237e;
+    border-bottom-color: #1a237e;
+  }
+  
+  .activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .activity-card {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .activity-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .section-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .chevron {
+    transition: transform 0.3s ease;
+  }
+  
+  .chevron.rotated {
+    transform: rotate(180deg);
+  }
+  
+  @media (max-width: 768px) {
+    .profile-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .profile-main {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .profile-avatar {
+      margin: -75px auto 0;
+    }
+  
+    .action-buttons {
+      flex-direction: column;
+    }
+  
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* @media (max-width: 480px) {
+    .profile-info {
+      padding: 1rem;
+    }
+  
+    .profile-avatar {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .profile-details h1 {
+      font-size: 1.5rem;
+    }
+  
+    .profile-description {
+      font-size: 0.9rem;
+    }
+  
+    .profile-content {
+      padding: 0 1rem;
+    }
+  
+    .profile-sidebar {
+      padding: 1rem;
+    }
+  
+    .stat-card {
+      padding: 1rem;
+    }
+  
+    .circular-progress,
+    .score-circle {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .progress-value,
+    .score-value {
+      font-size: 1.5rem;
+    }
+  }   */
